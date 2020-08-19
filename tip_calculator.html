@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tip Calculator</title>
+    <style>
+      body{
+        background-image: linear-gradient(to right, #201d18, #841003);
+      }
+
+      #box{
+        height:500px;
+        width:400px;
+        border:1px solid black;
+        border-radius:10px;
+        margin:200px auto 200px auto;
+        background-color:#f7f7f7;
+      }
+      #box2{
+        background-color: #1e030c;
+        border-radius: 10px 10px 0 0;
+        padding:10px 10px;
+
+      }
+      h4{
+        font-size:28px;
+        color:white;
+        text-transform:uppercase;
+        font-weight:normal;
+      }
+      form{
+
+        padding:10px;
+        margin:20px;
+        font-size:15px;
+        overflow:auto;
+      }
+      form label,input{
+        width:100%;
+        height:30px;
+      }
+      select{
+        width:100%;
+        height:40px;
+
+      }
+      form button{
+        width:200px;
+        margin: 40px auto;
+        height:50px;
+        position:relative;
+        left:60px;
+
+
+
+
+
+      }
+
+    </style>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist\css\bootstrap.min.css">
+  </head>
+  <body>
+    <div id="box">
+      <div id="box2">
+      <h4 class="text-center">Tip Calculator</h4>
+      </div>
+      <form>
+        <label for="bill_amount" name="l_bill_amount" id="l_bill_amount">How much was your bill?</label>
+        <input type="number" name="bill_amount" id="bill_amount" />
+        <label for="service" name="l_service" id="l_service">How was your service?</label></br>
+        <select id="service">
+          <option>30%- Outstanding</option>
+          <option>20%-Good</option>
+          <option>15%-OK</option>
+          <option>10%-Bad</option>
+          <option>5%-Terrible</option>
+        </select></br>
+
+        <label for="bill_amount" name="l_bill_amount" id="l_bill_amount">How many people are sharing the bill?</label>
+        <input type="number" min="1" max="100" name="no_people" id="no_people" /></br>
+
+        <button class="btn btn-danger"  >CALCULATE!</button>
+        </form>
+    </div>
+
+
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        var billamount = document.getElementByid('bill_amount').value;
+        var type_of_service = document.getElementByid('service')
+
+    </script>
+  </body>
+</html>
